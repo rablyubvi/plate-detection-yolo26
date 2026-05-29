@@ -1,0 +1,19 @@
+# Default fine-tuning settings for Vietnamese license plate detection.
+model: yolo26n.pt
+data: configs/plate_dataset.yaml
+epochs: 100
+imgsz: 640
+batch: 16
+workers: 4
+device: null
+project: runs/train
+name: yolo26-plate
+pretrained: true
+plots: true
+save: true
+exist_ok: true
+patience: 30
+optimizer: auto
+amp: true
+cache: false
+seed: 42
